@@ -32,7 +32,7 @@ int main(int argc, char **argv)
 {
     // Enable multithreading
     // ROOT::EnableImplicitMT(kNWorkers);
-    ROOT::EnableImplicitMT(2);
+    ROOT::EnableImplicitMT();
     ROOT::EnableThreadSafety();
     // Create RDataFrame from a tree, "tree" in the argv[1] file.
     ROOT::RDataFrame d("tree", argv[1]);
